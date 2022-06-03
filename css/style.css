@@ -1,0 +1,67 @@
+@font-face {
+  font-family: koloche;
+  src: url("../fonts/koloche.ttf");
+}
+@font-face {
+  font-family: "Reyhaneh";
+  src: url("../fonts/Reyhaneh.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "koloche";
+}
+h1{
+    text-align: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background-color: cornflowerblue;
+}
+.warpper {
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+header p {
+  margin-top: 10px;
+}
+form {
+  margin: 20px 0px;
+}
+form input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: medium;
+  font-family: "Reyhaneh";
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+form button {
+  opacity: 0.6;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px 0px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  pointer-events: none;
+}
+form input:valid ~ button {
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
